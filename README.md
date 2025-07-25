@@ -65,11 +65,27 @@ crontab -l (to verify)
 - EX
   - Delaware
   - New York
+4. Edit Start.sh and add the mailgun relays creds into it
 
 ```
 ./start.sh
 ```
 - activates the script
 
+## Mailgun / Namecheap Config
+
+
+1. Setup DNS records on Namecheap for Mailgun
+2. Create the Reply designated Gmail account
+3. TEMPORARY: Add a Catch-All request in Mailgun to foward all recieved emails to a temporary Gmail you control
+4. In the Reply designated Gmail account add fowarding to the mailgun server
+5. The temporary gmail should catch the fowarded verification code
+6. Remove the Temporary Catch all request and change it to foward all replys to the Designated Reply Gmail
+7. Finish the Start.sh Config
+8. DONE!  
+```
+Scirpt -> mailgun -> clinet
+reply -> mailgun -> gmail inbox
+Gmail inbox -> mailgun -> Client 
 
 
