@@ -72,6 +72,28 @@ crontab -l (to verify)
 ```
 - activates the script
 
+## Verification Site
+This is used so if your account gets flagged by Mailgun you can get it unbanned. A link to your Terms of Service must also be added at the bottom of the email to avoid bans.
+
+**Prerequisites**
+- Domain
+- Cloudflare account 
+- Cloudflare pages account
+- Static site (index.html, stylesheet.css, etc)
+  	- Download this from the Verification Folder in Main branch
+ 
+**Instructions**
+1. Cloudflare Pages create project
+	- Manual upload
+2. add files follow directions
+3. click add domain
+4. follow directions 
+5. add nameservers to Domain provider (namecheap)
+6. transfer DNS
+7. in Cloudflare project that hosts the site press setup Domain
+8. copy and paste dns cname into the dns nameserver cloudflare dashboard.
+9. Wait to say active
+
 ## Mailgun / Namecheap Config
 
 
