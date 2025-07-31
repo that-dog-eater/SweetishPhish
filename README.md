@@ -66,7 +66,8 @@ crontab -l (to verify)
   - Delaware
   - New York
 4. Edit Start.sh and add the mailgun relays creds into it
-5. Change Rate limiting in start.sh (set to 300 defualt)
+5. Change Rate limiting in start.sh (defulat: set to 300)
+6. Adjust Sending delay in controller (defulat: 300 - 600 seconds)
 
 ```
 ./start.sh
