@@ -110,6 +110,15 @@ This is used so if your account gets flagged by Mailgun you can get it unbanned.
 ```
 Scirpt -> mailgun -> clinet
 reply -> mailgun -> gmail inbox
-Gmail inbox -> mailgun -> Client 
+Gmail inbox -> mailgun -> Client
+```
+
+## Requirments:
+- requests
+- beautifulsoup4
+- serpapi
+- google-search-results
+- dns.resolver
+- random
 
 
