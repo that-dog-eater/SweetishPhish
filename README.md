@@ -61,11 +61,11 @@ crontab -l (to verify)
 1. Add Keywords to dork_data/Keywords.txt for dorking
 2. Edit emails/templates/body.txt and subject.txt for email config  
 3. Edit each day under dorkdata/location_lists
-- add a place to search wiht a line break for each new place
+- add a place to search with a line break for each new place
 - EX
   - Delaware
   - New York
-4. Edit Start.sh and add the mailgun relays creds into it
+4. Edit Start.sh and add the mailgun relays creds into it and serpapi key
 5. Change Rate limiting in start.sh (defulat: set to 300)
 6. Adjust Sending delay in controller (defulat: 300 - 600 seconds)
 
