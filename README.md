@@ -70,6 +70,9 @@ crontab -l (to verify)
 6. Adjust Sending delay in controller (defulat: 300 - 600 seconds)
 
 ```
+./setup.sh
+```
+```
 ./start.sh
 ```
 - activates the script
