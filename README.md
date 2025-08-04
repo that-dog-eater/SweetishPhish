@@ -101,15 +101,21 @@ This is used so if your account gets flagged by Mailgun you can get it unbanned.
 
 ## Mailgun / Namecheap Config
 
-
-1. Setup DNS records on Namecheap for Mailgun
-2. Create the Reply designated Gmail account
-3. TEMPORARY: Add a Catch-All request in Mailgun to foward all recieved emails to a temporary Gmail you control
-4. In the Reply designated Gmail account add fowarding to the mailgun server
-5. The temporary gmail should catch the fowarded verification code
-6. Remove the Temporary Catch all request and change it to foward all replys to the Designated Reply Gmail
-7. Finish the Start.sh Config
-8. DONE!  
+1. Add domain to Mailgun (dont use a subdomain when adding)
+2. Setup DNS records on Cloudflare for Mailgun
+	- CNAME records = turn off proxy through cloudflare
+3. Add a smtp user
+   - SMTP Credentials > add new SMTP user
+   - Save user and password
+5. Create the Reply designated Gmail account
+6. In the Reply designated Gmail account add fowarding to the mailgun server
+	- Go to settings > Accounts and imports > send mail as > add another email address
+	- in the yellow box - Name: normal (max) , Email: domain (max@thisisaexample.com)
+	- enter SMTP server, username, password avalible under SMTP credentials in mailgun
+7. In mailgun add a catch all request to foward all emails back to the reply designated email
+8. send the verification to allow gmail to send emails through that server and recive it in the same inbox
+9. Finish the Start.sh Config
+10. DONE!  
 ```
 Scirpt -> mailgun -> clinet
 reply -> mailgun -> gmail inbox
