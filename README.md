@@ -112,6 +112,7 @@ This is used so if your account gets flagged by Mailgun you can get it unbanned.
 	- Go to settings > Accounts and imports > send mail as > add another email address
 	- in the yellow box - Name: normal (max) , Email: domain (max@thisisaexample.com)
 	- enter SMTP server, username, password avalible under SMTP credentials in mailgun
+	- Set as defualt sending address
 7. In mailgun add a catch all request to foward all emails back to the reply designated email
 8. send the verification to allow gmail to send emails through that server and recive it in the same inbox
 9. Finish the Start.sh Config
