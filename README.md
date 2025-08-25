@@ -41,13 +41,12 @@ source env/bin/activate
 
 Install Python Dependencies
 ```
-pip install requests beautifulsoup4 serpapi
-pip install google-search-results
+pip install requests beautifulsoup4 google-search-results dnspython
 ```
 
 Create Cron job to run Daily
 ```
-	crontab -e
+	export VISUAL=nano; crontab -e
 ```
 - Select Nano if prompted
 ```
@@ -126,9 +125,9 @@ Gmail inbox -> mailgun -> Client
 ## Requirments:
 - requests
 - beautifulsoup4
-- serpapi
 - google-search-results
-- dns.resolver
+- dnspython
 - random
+- datetime
 
 
