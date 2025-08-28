@@ -12,10 +12,10 @@ pwd
 
 cd /root/SweetishPhish
 
-max_searches_per_day = 
-server_send_ratelimit = 
-open_email_scraping_threads = 30 
-depth_per_url_search = 2 #2 pages deep
+max_searches_per_day= 
+server_send_ratelimit= 
+open_email_scraping_threads=30 
+depth_per_url_search=2 #2 pages deep
 
 export SMTP_URL=""
 export SMTP_USER=""
